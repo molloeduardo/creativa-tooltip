@@ -30,6 +30,8 @@ Every aspect of the tooltip is customizable.
 - Safari
 
 It doesn't work with the old Internet Explorer.
+## Mobile
+The tooltip works perfectly on mobile devices too. To do this, I implemented an event that disable the browser context menu on the tooltip elements.
 ## Attributes
 ### Simple tooltip
 With the attribute **ct-tooltip** you can generate a simple tooltip that will appear on top of the link.
