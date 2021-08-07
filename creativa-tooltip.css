@@ -1,0 +1,77 @@
+.ct-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.ct-tooltiptext {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    width: -moz-fit-content;
+    background-color: #555;
+    color: #fff;
+    padding: 6px 10px;
+    z-index: 1;
+    opacity: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    line-height: 16px;
+}
+
+/* --- TOP --- */
+
+.ct-tooltip .ct-tooltiptext-top {
+    bottom: 130%;
+    left: 75%;
+    margin-left: -60px;
+}
+
+/* --- RIGHT --- */
+
+.ct-tooltip .ct-tooltiptext-right {
+    top: -5px;
+    left: 120%;
+}
+
+/* --- BOTTOM --- */
+
+.ct-tooltip .ct-tooltiptext-bottom {
+    top: 130%;
+    left: 75%;
+    margin-left: -60px;
+}
+
+/* --- LEFT --- */
+
+.ct-tooltip .ct-tooltiptext-left {
+    top: -5px;
+    right: 120%;
+}
+
+/* --- ANIMATIONS --- */
+
+.ct-open-animation {
+    animation-name: ct-open-animation;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ct-open-animation {
+    from { opacity: 0; transform: scale(0.9, 0.9); }
+    to { opacity: 1; transform: scale(1, 1); }
+}
+
+.ct-close-animation {
+    animation-name: ct-close-animation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ct-close-animation {
+    from { opacity: 1; transform: scale(1, 1); }
+    to { opacity: 0; transform: scale(0.9, 0.9); }
+}
